@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Attribute Selectors</title>
+
+<link href="./StyleSheets/reset.css" rel="stylesheet" />
+<link href="./StyleSheets/generic.css" rel="stylesheet" />
+<link href="./StyleSheets/navicon.css" rel="stylesheet" />
+<link href="./StyleSheets/print.css" rel="stylesheet" />
+<link href="./StyleSheets/tableStyle.css" rel="stylesheet" />
+
+</head>
+<header>
+	<nav class="horizontalNavigation mainNav">
+		<a id="navicon" href="#"><img src="./images/navicon.png" alt="" /></a>
+		<ul class="mainmenu">
+			<li><a href="#" class="submenuTitle">Technology</a>
+				<ul class="submenu">
+					<li><a href="#">Software Engineering</a></li>
+					<li><a href="#">Design Patterns</a></li>
+					<li><a href="#">Software Engineering</a></li>
+				</ul></li>
+
+			<li><a href="#" class="submenuTitle">Music Reviews</a>
+				<ul class="submenu">
+					<li><a href="#">Software Engineering</a></li>
+					<li><a href="#">Design Patterns</a></li>
+					<li><a href="#">Software Engineering</a></li>
+				</ul></li>
+			<li><a href="#" class="submenuTitle">Movie Reviews</a>
+				<ul class="submenu">
+					<li><a href="#">Software Engineering</a></li>
+					<li><a href="#">Design Patterns</a></li>
+					<li><a href="#">Software Engineering</a></li>
+				</ul></li>
+			<li><a href="#" class="submenuTitle">Fitness</a>
+				<ul class="submenu">
+					<li><a href="#">Software Engineering</a></li>
+					<li><a href="#">Design Patterns</a></li>
+					<li><a href="#">Software Engineering</a></li>
+				</ul></li>
+			<li><a href="#" class="submenuTitle">Nutrition</a>
+				<ul class="submenu">
+					<li><a href="#">Software Engineering</a></li>
+					<li><a href="#">Design Patterns</a></li>
+					<li><a href="#">Software Engineering</a></li>
+				</ul></li>
+			<li><a href="#" class="submenuTitle">Gardening</a>
+				<ul class="submenu">
+					<li><a href="#">Software Engineering</a></li>
+					<li><a href="#">Design Patterns</a></li>
+					<li><a href="#">Software Engineering</a></li>
+				</ul></li>
+			<li><a href="#" class="submenuTitle">Anime</a>
+				<ul class="submenu">
+					<li><a href="#">Software Engineering</a></li>
+					<li><a href="#">Design Patterns</a></li>
+					<li><a href="#">Software Engineering</a></li>
+				</ul></li>
+			<li><a href="#" class="submenuTitle">Gaming </a>
+				<ul class="submenu">
+					<li><a href="#">Software Engineering</a></li>
+					<li><a href="#">Design Patterns</a></li>
+					<li><a href="#">Software Engineering</a></li>
+				</ul></li>
+			<li><a href="#" class="submenuTitle">Cooking</a>
+				<ul class="submenu">
+					<li><a href="#">Software Engineering</a></li>
+					<li><a href="#">Design Patterns</a></li>
+					<li><a href="#">Software Engineering</a></li>
+				</ul></li>
+			<li><a href="#" class="submenuTitle">Book Club</a>
+				<ul class="submenu">
+					<li><a href="#">Software Engineering</a></li>
+					<li><a href="#">Design Patterns</a></li>
+					<li><a href="#">Software Engineering</a></li>
+				</ul></li>
+		</ul>
+	</nav>
+</header>
+
+<body>
+
+	<div id="main">
+		<table class="tg">
+			<thead>
+				<tr>
+					<th class="tg-baqh" colspan="7">Attribute Selectors</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="tg-baqh">Selector</td>
+					<td class="tg-0lax"></td>
+					<td class="tg-baqh">Selects</td>
+					<td class="tg-0lax"></td>
+					<td class="tg-baqh">Example</td>
+					<td class="tg-0lax"></td>
+					<td class="tg-baqh">Selects</td>
+				</tr>
+				<tr>
+					<td class="tg-0lax"></td>
+					<td class="tg-0lax"></td>
+					<td class="tg-0lax"></td>
+					<td class="tg-0lax"></td>
+					<td class="tg-0lax"></td>
+					<td class="tg-0lax"></td>
+					<td class="tg-0lax"></td>
+				</tr>
+				<tr>
+					<td class="tg-0lax">elem#id</td>
+					<td class="tg-0lax"></td>
+					<td class="tg-0lax">Element elem with the ID value id</td>
+					<td class="tg-0lax"></td>
+					<td class="tg-0lax">h1#intro</td>
+					<td class="tg-0lax"></td>
+					<td class="tg-0lax">The h1 heading with the id intro</td>
+				</tr>
+				<tr>
+					<td class="tg-0lax">#id</td>
+					<td class="tg-0lax"></td>
+					<td class="tg-0lax">Any element with the ID value id</td>
+					<td class="tg-0lax"></td>
+					<td class="tg-0lax">#intro</td>
+					<td class="tg-0lax"></td>
+					<td class="tg-0lax">Any element with the id intro</td>
+				</tr>
+				<tr>
+					<td class="tg-0lax">elem.class</td>
+					<td class="tg-0lax"></td>
+					<td class="tg-0lax">All elem elements with the class attribute
+						value class</td>
+					<td class="tg-0lax"></td>
+					<td class="tg-0lax">p.main</td>
+					<td class="tg-0lax"></td>
+					<td class="tg-0lax">All paragraphs belonging to the main class</td>
+				</tr>
+				<tr>
+					<td class="tg-0lax">.class</td>
+					<td class="tg-0lax"></td>
+					<td class="tg-0lax">All elements with the class value class</td>
+					<td class="tg-0lax"></td>
+					<td class="tg-0lax">.main</td>
+					<td class="tg-0lax"></td>
+					<td class="tg-0lax">All elements belonging to the main class</td>
+				</tr>
+				<tr>
+					<td class="tg-0lax">elem[att]</td>
+					<td class="tg-0lax"></td>
+					<td class="tg-0lax">All elem elements containing the att
+						attribute</td>
+					<td class="tg-0lax"></td>
+					<td class="tg-0lax">a[href]</td>
+					<td class="tg-0lax"></td>
+					<td class="tg-0lax">All hypertext elements containing the href
+						attribute</td>
+				</tr>
+				<tr>
+					<td class="tg-0lax">elem[att=”text”]</td>
+					<td class="tg-0lax"></td>
+					<td class="tg-0lax">All elem elements whose att attribute
+						equals text</td>
+					<td class="tg-0lax"></td>
+					<td class="tg-0lax">a[href=”top.html”]</td>
+					<td class="tg-0lax"></td>
+					<td class="tg-0lax">All hypertext elements whose href
+						attribute equals top.html</td>
+				</tr>
+				<tr>
+					<td class="tg-0lax">elem[att~=”text”]</td>
+					<td class="tg-0lax"></td>
+					<td class="tg-0lax">All elem elements whose att attribute
+						contains the word text</td>
+					<td class="tg-0lax"></td>
+					<td class="tg-0lax">a[rel~=”glossary”]</td>
+					<td class="tg-0lax"></td>
+					<td class="tg-0lax">All hypertext elements whose rel attribute
+						contains the word glossary</td>
+				</tr>
+				<tr>
+					<td class="tg-0lax">elem[att|=”text”]</td>
+					<td class="tg-0lax"></td>
+					<td class="tg-0lax">All elem elements whose att attribute is a
+						hyphen-separated list of words beginning with text</td>
+					<td class="tg-0lax"></td>
+					<td class="tg-0lax">p[id|="first"]</td>
+					<td class="tg-0lax"></td>
+					<td class="tg-0lax">All paragraphs whose id attributes starts
+						with the word first in a hyphen-separated list of words</td>
+				</tr>
+				<tr>
+					<td class="tg-0lax">elem[att^=”text”]</td>
+					<td class="tg-0lax"></td>
+					<td class="tg-0lax">All elem elements whose att attribute
+						begins with text [CSS3]</td>
+					<td class="tg-0lax"></td>
+					<td class="tg-0lax">a[rel^=”prev”]</td>
+					<td class="tg-0lax"></td>
+					<td class="tg-0lax">All hypertext elements whose rel attribute
+						begins with prev</td>
+				</tr>
+				<tr>
+					<td class="tg-0lax">elem[att$=”text”]</td>
+					<td class="tg-0lax"></td>
+					<td class="tg-0lax">All elem elements whose att attribute ends
+						with text [CSS3]</td>
+					<td class="tg-0lax"></td>
+					<td class="tg-0lax">a[href$="org"]</td>
+					<td class="tg-0lax"></td>
+					<td class="tg-0lax">All hypertext elements whose href
+						attribute ends with org</td>
+				</tr>
+				<tr>
+					<td class="tg-0lax">elem[att*=”text”]</td>
+					<td class="tg-0lax"></td>
+					<td class="tg-0lax">All elem elements whose att attribute
+						contains the value text</td>
+					<td class="tg-0lax"></td>
+					<td class="tg-0lax">a[href*=”faq”]</td>
+					<td class="tg-0lax"></td>
+					<td class="tg-0lax">All hypertext elements whose href
+						attribute contains the text string faq</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</body>
+<footer>
+	<nav class="verticalNavigation">
+		<h1>The Store</h1>
+		<ul>
+			<li><a href="aboutUs.html">About Us</a></li>
+			<li><a href="WebForm.html">Want to Subscribe?</a></li>
+			<li><a href="attributeSelectors.html">Attribute Selectors</a></li>
+			<li><a href="contextualSelectors.html">Contextual Selectors</a></li>
+			<li><a href="RGBColorGame.html">Color Game</a></li>
+		</ul>
+	</nav>
+	<nav class="verticalNavigation">
+		<h1>Products</h1>
+		<ul>
+			<li><a href="#">Online Store</a></li>
+			<li><a href="#">Gift Boxes</a></li>
+			<li><a href="#">Collections</a></li>
+			<li><a href="#">Weddings</a></li>
+			<li><a href="#">Specials</a></li>
+		</ul>
+	</nav>
+	<nav class="verticalNavigation">
+		<h1>Services</h1>
+		<ul>
+			<li><a href="#">My Account</a></li>
+			<li><a href="#">Order History</a></li>
+			<li><a href="#">Tracking</a></li>
+			<li><a href="#">Privacy Policy</a></li>
+			<li><a href="#">Contact Us</a></li>
+		</ul>
+	</nav>
+	<section id="contactInfo">
+		<h1>Location &amp; Hours</h1>
+		<p>
+			414 Tree Lane <br /> Essex, Vermont 05452<br /> (802) 555-0414
+		</p>
+		<p>
+			Mon - Thu: 9 a.m. - 8 p.m.<br /> Sat - Sun: 9 a.m. - 5 p.m.
+		</p>
+		<br />
+	</section>
+</footer>
+</html>

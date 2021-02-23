@@ -1,0 +1,39 @@
+@charset "utf-8";
+
+/* body>header>img {
+	displays the logo image as a block element
+	display: block;
+	sets the width of the logo to 100% of the page body
+	width: 100%;
+} */
+
+img#vegeta{
+	display:inline-block;
+
+}
+
+
+section img {
+	/* outline: 1px solid blue; */
+	
+}
+
+section#leftColumn {
+	
+	/* displays the left column once the left margin is clear of previously floated elements */
+	clear: left;
+
+	padding: 1em;
+}
+
+section#rightColumn {
+	/* floats the left column on the left margin with a width of
+	67% of the page body */
+	float: right;
+	width: 67%;
+}
+
+section#today{
+	padding: 1em;
+}
+

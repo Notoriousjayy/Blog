@@ -1,0 +1,38 @@
+@charset "utf-8";
+
+section#movingSection {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-column-gap: 1em;
+	grid-row-gap: 1em;
+}
+
+section > div {
+	background: white;
+	padding: 1em;
+}
+
+section>div:nth-child(odd) {
+	background: grey;
+}
+
+@keyframes Jordan { 
+	0%{	background-color: orange;left: 0px;	top: 0px;}
+	25%{background-color:yellow;left:200px;top:0px;}
+	50%{background-color:blue;left:200px;top:200px;}
+	75%{background-color:green;left:0px;top:200px;}
+	100%{background-color:orange;left:0px;top:0px;}
+}
+div {
+	background-color: red;
+	animation-name: Jordan;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+	position: relative;
+}
+
+div > p {
+	background: white;
+/* 	grid-row: 3;
+	grid-column: 3; */
+}

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Subscriber's Page</title>
+
+<link href="./StyleSheets/reset.css" rel="stylesheet" />
+<link href="./StyleSheets/WebForm.css" rel="stylesheet" />
+<link href="./StyleSheets/generic.css" rel="stylesheet" />
+<link href="./StyleSheets/navicon.css" rel="stylesheet" />
+<link href="./StyleSheets/print.css" rel="stylesheet" />
+<script src="./scripts/formsubmit.js"></script>
+
+</head>
+<header>
+	<nav class="horizontalNavigation mainNav">
+		<a id="navicon" href="#"><img src="./images/navicon.png" alt="" /></a>
+		<ul class="mainmenu">
+			<li><a href="#" class="submenuTitle">Technology</a>
+				<ul class="submenu">
+					<li><a href="#">Software Engineering</a></li>
+					<li><a href="#">Design Patterns</a></li>
+					<li><a href="#">Software Engineering</a></li>
+				</ul></li>
+
+			<li><a href="#" class="submenuTitle">Music Reviews</a>
+				<ul class="submenu">
+					<li><a href="#">Software Engineering</a></li>
+					<li><a href="#">Design Patterns</a></li>
+					<li><a href="#">Software Engineering</a></li>
+				</ul></li>
+			<li><a href="#" class="submenuTitle">Movie Reviews</a>
+				<ul class="submenu">
+					<li><a href="#">Software Engineering</a></li>
+					<li><a href="#">Design Patterns</a></li>
+					<li><a href="#">Software Engineering</a></li>
+				</ul></li>
+			<li><a href="#" class="submenuTitle">Fitness</a>
+				<ul class="submenu">
+					<li><a href="#">Software Engineering</a></li>
+					<li><a href="#">Design Patterns</a></li>
+					<li><a href="#">Software Engineering</a></li>
+				</ul></li>
+			<li><a href="#" class="submenuTitle">Nutrition</a>
+				<ul class="submenu">
+					<li><a href="#">Software Engineering</a></li>
+					<li><a href="#">Design Patterns</a></li>
+					<li><a href="#">Software Engineering</a></li>
+				</ul></li>
+			<li><a href="#" class="submenuTitle">Gardening</a>
+				<ul class="submenu">
+					<li><a href="#">Software Engineering</a></li>
+					<li><a href="#">Design Patterns</a></li>
+					<li><a href="#">Software Engineering</a></li>
+				</ul></li>
+			<li><a href="#" class="submenuTitle">Anime</a>
+				<ul class="submenu">
+					<li><a href="#">Software Engineering</a></li>
+					<li><a href="#">Design Patterns</a></li>
+					<li><a href="#">Software Engineering</a></li>
+				</ul></li>
+			<li><a href="#" class="submenuTitle">Gaming </a>
+				<ul class="submenu">
+					<li><a href="#">Software Engineering</a></li>
+					<li><a href="#">Design Patterns</a></li>
+					<li><a href="#">Software Engineering</a></li>
+				</ul></li>
+			<li><a href="#" class="submenuTitle">Cooking</a>
+				<ul class="submenu">
+					<li><a href="#">Software Engineering</a></li>
+					<li><a href="#">Design Patterns</a></li>
+					<li><a href="#">Software Engineering</a></li>
+				</ul></li>
+			<li><a href="#" class="submenuTitle">Book Club</a>
+				<ul class="submenu">
+					<li><a href="#">Software Engineering</a></li>
+					<li><a href="#">Design Patterns</a></li>
+					<li><a href="#">Software Engineering</a></li>
+				</ul></li>
+		</ul>
+	</nav>
+</header>
+
+<body>
+	<div id="main">
+		<p>Thank you for subscribing to my blog!</p>
+
+		<form id="survey" action="http://www.myFakeServer.com" method="post">
+			<fieldset id="Subscribers">
+				<legend> Subscribers Information</legend>
+
+				<div class="formRow">
+					<label> Name* <input name="SubscribersName" id="name"
+						type="text" required placeholder="Jacob" />
+					</label>
+				</div>
+
+				<div class="formRow">
+					<label> City <input name="SubscribersCity" id="city"
+						type="text" placeholder="University City" />
+					</label>
+				</div>
+
+				<div class="formRow">
+					<label> State <input name="SubscribersState" id="state"
+						type="text" placeholder="GA" />
+					</label>
+				</div>
+
+				<div class="formRow">
+					<label> Postal Code <input name="SubscribersZip" id="zip"
+						pattern="^\d{5}$" type="text" placeholder="XXXXX" />
+
+					</label>
+				</div>
+
+				<div class="formRow">
+					<label> E-mail* <input name="SubscribersEmail" id="mail"
+						type="email" required placeholder="XX@email.com" />
+					</label>
+				</div>
+
+				<div class="formRow">
+					<label for="Subscribers">Why are you here?<br />(select
+						all that apply)
+					</label> <select name="infosorce" id="info" size="5" multiple>
+						<option value="Recuriter">Recuriter</option>
+						<option value="student">I'm one of your students</option>
+						<option value="fan">Curious about your work</option>
+
+					</select>
+				</div>
+			</fieldset>
+
+			<fieldset>
+				<legend>Share Your Experience of my blog with me!</legend>
+				<div class="formRow">
+					<label for="experience">How was your experience?</label> <select
+						name="Experience" id="order">
+						<option value="Good">Good</option>
+						<option value="Bad">Bad</option>
+						<option value="decent">Could be better</option>
+						<option value="hated">It sucked</option>
+					</select>
+
+
+				</div>
+
+
+			</fieldset>
+			<div id="buttons">
+				<input type="submit" value="Submit My Survey" /> <input
+					type="reset" value="Cancel" />
+			</div>
+
+		</form>
+	</div>
+
+
+</body>
+<footer>
+	<nav class="verticalNavigation">
+		<h1>The Store</h1>
+		<ul>
+			<li><a href="aboutUs.html">About Us</a></li>
+			<li><a href="WebForm.html">Want to Subscribe?</a></li>
+			<li><a href="attributeSelectors.html">Attribute Selectors</a></li>
+			<li><a href="contextualSelectors.html">Contextual Selectors</a></li>
+			<li><a href="RGBColorGame.html">Color Game</a></li>
+		</ul>
+	</nav>
+	<nav class="verticalNavigation">
+		<h1>Products</h1>
+		<ul>
+			<li><a href="#">Online Store</a></li>
+			<li><a href="#">Gift Boxes</a></li>
+			<li><a href="#">Collections</a></li>
+			<li><a href="#">Weddings</a></li>
+			<li><a href="#">Specials</a></li>
+		</ul>
+	</nav>
+	<nav class="verticalNavigation">
+		<h1>Services</h1>
+		<ul>
+			<li><a href="#">My Account</a></li>
+			<li><a href="#">Order History</a></li>
+			<li><a href="#">Tracking</a></li>
+			<li><a href="#">Privacy Policy</a></li>
+			<li><a href="#">Contact Us</a></li>
+		</ul>
+	</nav>
+	<section id="contactInfo">
+		<h1>Location &amp; Hours</h1>
+		<p>
+			414 Tree Lane <br /> Essex, Vermont 05452<br /> (802) 555-0414
+		</p>
+		<p>
+			Mon - Thu: 9 a.m. - 8 p.m.<br /> Sat - Sun: 9 a.m. - 5 p.m.
+		</p>
+		<br />
+	</section>
+</footer>
+</html>

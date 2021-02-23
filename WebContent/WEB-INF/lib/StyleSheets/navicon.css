@@ -1,0 +1,26 @@
+@charset "utf-8";
+a#navicon{
+	display: none;
+}
+
+/*
+===============================================================================
+Tablet Devices: 0 to 768px
+===============================================================================
+*/
+
+@media only screen and (max-width: 768px){
+	
+	a#navicon{
+	display:block;
+	background-color:red;
+		
+	}
+	
+	nav.horizontalNavigation ul{
+	display: none;
+	}
+	a#navicon:hover+ul, nav.horizontalNavigation ul:hover{
+	display: block;
+	}
+}

@@ -1,0 +1,180 @@
+@charset "utf-8";
+
+div#main {
+	background-color: white;
+}
+
+
+
+/* Hover event for navigation bar */
+ nav.horizontalNavigation a:hover {
+	
+	color:white;
+	
+	/* End State display after transition */
+	font-size 3em;
+	
+	letter-spacing: 0.1em;
+	
+	text-shadow: rgba(0, 0, 0, 0.5) 15px -3px 8px;
+	
+	transition: color 1.5s ease-in 0.5s,
+				font-size 2s ease,
+				letter-spacing 2s ease-out,
+				text-shadow 2s cubic-bezier(0.6, 0, 0.8, 0.5);
+	
+}
+
+nav.horizontalNavigation a {
+	
+	/* displays the link as a block */
+	display: block;
+	
+	/* centers the text within the block */
+	text-align: center;
+	
+}
+
+footer {
+	/* displays the footer once the left margin is clear of floated objects */
+	clear: left;
+	background-color: red;
+}
+
+footer>nav.verticalNavigation {
+	/* sets the width of the vertical navigation lists to 22% and floats them on the left */
+	float: left;
+	width: 22%;
+}
+
+/* creates an element after the footer */
+
+footer::after {
+	/* places the element after both the margins are clear */
+	clear: both;
+	/* the element consists of an empty web table */
+	content: "";
+	display: table;
+}
+
+body {
+	/* setting the left and right margins to auto forces block elements to be horizontally centered within their parent */
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 66%;
+	min-width: 33%;
+	width: 95%;
+	background-image: url(../images/hanna-barbra.jpg);
+}
+
+html {
+	/* 
+=============================================================================================
+Base Flex Stlyes
+============================================================================================= 
+*/
+	display: -webkit-flex;
+	display: inline-flex;
+	-webkit-flex-flow: column wrap;
+	flex-flow: column wrap;
+}
+
+body:: after {
+	clear: both;
+	content: "";
+	display: table;
+}
+
+nav.horizontalNavigation li {
+	/* floats the list item within every horizontal navigation list as a block on the left */
+	float: left;
+	display: block;
+}
+
+nav.horizontalNavigation>ul {
+	display: flex;
+	flex: auto;
+}
+
+nav.horizontalNavigation ul li {
+	flex: auto;
+}
+
+nav.mainNav{
+	background-color:red;
+}
+/*  Hides submenus */
+
+ul.submenu {
+	display: none;
+	background-color: green;
+}
+
+ul.submenu>li {
+	float: none;
+}
+
+/*  Displays hidden submenus */
+a.submenuTitle:hover+ul.submenu, ul.submenu:hover {
+	display: block;
+}
+
+ul.mainMenu>li {
+	position: relative;
+}
+
+ul.submenu {
+	position: absolute;
+	box-shadow: rgb(51, 51, 51) 5px 5px 5px;
+}
+
+header, footer {
+	/* displays the header and footer at 100% the size of the body 
+	occupying one row */
+	width: 100%;
+}
+
+/*
+==============================================================================================
+Mobile Styles:0px to 480px
+==============================================================================================
+*/
+@media only screen and (max-width: 480px) {
+	nav.horizontal a {
+		font-size: 1.5em;
+		line-height: 2.2em;
+	}
+}
+
+/*
+==============================================================================================
+Tablet Styles:481px and greater
+==============================================================================================
+*/
+@media only screen and (max-width: 481px) {
+	ul.mainMenu>li {
+		float: left;
+		width: 20%;
+	}
+	ul.submenu {
+		width: 200%;
+	}
+	nav.horizontalNavigation ul {
+		display: -webkit-flexflex;
+		display: flex;
+		-webkit-flex-flow: row nowrap;
+		flex-flow: row nowrap;
+	}
+	nav.horizontalNavigation li {
+		-webkit-flex-: 1 1 auto;
+		flex: 1 1 auto;
+	}
+}
+
+/*
+==============================================================================================
+Desktop Styles:769px and greater
+==============================================================================================
+*/
+@media only screen and (max-width: 769px) {
+}
